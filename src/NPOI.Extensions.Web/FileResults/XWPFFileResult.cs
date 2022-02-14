@@ -24,9 +24,5 @@ namespace NPOI.Extensions.Web
             ms.Position = 0;
             return ms;
         }
-        public override Task ExecuteResultAsync(ActionContext context)
-        {
-            return base.ExecuteResultAsync(context);
-        }
     }
 }

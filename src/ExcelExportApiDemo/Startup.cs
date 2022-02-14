@@ -27,7 +27,6 @@ namespace ExcelExportApiDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddNPOIExtensions();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -26,15 +26,6 @@ namespace NPOI.Extensions.Web
             ms.Position=0;
             return ms;
         }
-        public override Task ExecuteResultAsync(ActionContext context)
-        {
-            if (context == null)
-            {
-                throw new ArgumentNullException(nameof(context));
-            }
-            var executor = context.HttpContext.RequestServices.GetRequiredService<IActionResultExecutor<FileStreamResult>>();
-            return executor.ExecuteAsync(context, this);
-        }
     }
     
 
