@@ -23,7 +23,9 @@ public ActionResult Get()
 
 *Sample Code*
 
-```var dt=sheet1.ToDataTable(false);```
+```
+var dt=sheet1.ToDataTable(false);
+```
 
 # Planning
 ### TempStorage Support
