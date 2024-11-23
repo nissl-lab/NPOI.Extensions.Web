@@ -42,7 +42,6 @@ namespace ExcelExportApiDemo.Controllers
                     row.CreateCell(j).SetCellValue(x++);
                 }
             }
-            var dt = sheet1.ToDataTable(true, true);
             return workbook;
         }
 
@@ -52,7 +51,7 @@ namespace ExcelExportApiDemo.Controllers
             ISheet sheet1 = workbook.CreateSheet("Sheet1");
 
             sheet1.CreateRow(0).CreateCell(0).SetCellValue("This is My Sample");
-            var dt=sheet1.ToDataTable(false);
+
             return workbook;
         }
 
