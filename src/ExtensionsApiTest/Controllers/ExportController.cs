@@ -1,16 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Microsoft.Net.Http.Headers;
 using NPOI.Extensions.Web;
 using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ExcelExportApiDemo.Controllers
 {
@@ -42,9 +34,15 @@ namespace ExcelExportApiDemo.Controllers
                 IRow row = sheet1.CreateRow(i);
                 for (int j = 0; j < 15; j++)
                 {
+                    if (j == 14)
+                    {
+                        row.CreateCell(j).SetCellFormula("B2");
+                        continue; 
+                    }
                     row.CreateCell(j).SetCellValue(x++);
                 }
             }
+            var dt = sheet1.ToDataTable(true, true);
             return workbook;
         }
 
@@ -54,6 +52,7 @@ namespace ExcelExportApiDemo.Controllers
             ISheet sheet1 = workbook.CreateSheet("Sheet1");
 
             sheet1.CreateRow(0).CreateCell(0).SetCellValue("This is My Sample");
+            var dt=sheet1.ToDataTable(false);
             return workbook;
         }
 

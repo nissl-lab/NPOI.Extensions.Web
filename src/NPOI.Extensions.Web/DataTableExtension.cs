@@ -1,10 +1,6 @@
 ﻿using NPOI.HSSF.UserModel;
-using NPOI.SS.Formula;
 using NPOI.SS.UserModel;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Text;
 
 namespace NPOI.Extensions.Web
 {
@@ -26,7 +22,7 @@ namespace NPOI.Extensions.Web
             DataTable dt = new DataTable(sheet.SheetName);
 
             HSSFDataFormatter formatter = new HSSFDataFormatter();
-            var formulaEvalator=sheet.Workbook.GetCreationHelper().CreateFormulaEvaluator();
+            var formulaEvaluator=sheet.Workbook.GetCreationHelper().CreateFormulaEvaluator();
             for (int i = 0; i <= sheet.LastRowNum; i++)
             {
                 var row=sheet.GetRow(i);
@@ -41,20 +37,13 @@ namespace NPOI.Extensions.Web
                         for (int j = 0; j < row.LastCellNum; j++)
                         {
                             var c = row.GetCell(j);
-                            if (c == null)
-                            {
-                                dt.Columns.Add("");
-                            }
-                            else
-                            {
-                                dt.Columns.Add(formatter.FormatCellValue(c));
-                            }
+                            dt.Columns.Add(c == null ? "" : formatter.FormatCellValue(c));
                         }
                         continue;
                     }
                 }
                 
-                DataRow dr = null;
+                DataRow dr = null!;
                 for (int j = 0; j < row.LastCellNum; j++)
                 {                    
                     if (j == 0)
@@ -88,17 +77,17 @@ namespace NPOI.Extensions.Web
                         case CellType.Formula:
                             if (showCalculatedFormulaValue)
                             {
-                                var cellvalue = formulaEvalator.Evaluate(c);
-                                switch (cellvalue.CellType)
+                                var cellValue = formulaEvaluator.Evaluate(c);
+                                switch (cellValue.CellType)
                                 {
                                     case CellType.Numeric:
-                                        dr[j] = cellvalue.NumberValue;
+                                        dr[j] = cellValue.NumberValue;
                                         break;
                                     case CellType.String:
-                                        dr[j] = cellvalue.StringValue;
+                                        dr[j] = cellValue.StringValue;
                                         break;
                                     case CellType.Boolean:
-                                        dr[j] = cellvalue.BooleanValue;
+                                        dr[j] = cellValue.BooleanValue;
                                         break;
                                     case CellType.Error:
                                         if(c.ErrorCellValue== FormulaError.NULL.Code)

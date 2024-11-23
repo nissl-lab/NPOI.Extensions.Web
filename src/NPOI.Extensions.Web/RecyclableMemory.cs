@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using System.Threading;
-
-namespace NPOI.Extensions.Web
+﻿namespace NPOI.Extensions.Web
 {
 	public static class RecyclableMemory
 	{

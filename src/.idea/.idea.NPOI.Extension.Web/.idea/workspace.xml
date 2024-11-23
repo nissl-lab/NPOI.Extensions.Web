@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="932c858b-9540-46c2-a21b-c83a407088fc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.NPOI.Extension.Web/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.NPOI.Extensions.Web/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.NPOI.Extensions.Web/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.NPOI.Extensions.Web/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.NPOI.Extensions.Web/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NPOI.Extensions.Web/NPOI.Extensions.Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExcelExportApiDemo/Controllers/ExportController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExcelExportApiDemo/ExcelExportApiDemo.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExcelExportApiDemo/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExcelExportApiDemo/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExcelExportApiDemo/Startup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExcelExportApiDemo/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExcelExportApiDemo/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NPOI.Extensions.Web.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NPOI.Extensions.Web/DataTableExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NPOI.Extensions.Web/FileResults/HSSFFileResult.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NPOI.Extensions.Web/FileResults/SXSSFFileResult.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NPOI.Extensions.Web/FileResults/XSSFFileResult.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NPOI.Extensions.Web/FileResults/XWPFFileResult.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NPOI.Extensions.Web/NPOI.Extensions.Web.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NPOI.Extensions.Web/RecyclableMemory.cs" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "tonyqus"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/nissl-lab/NPOI.Extensions.Web",
+    "accountId": "8393f6e7-bc76-4d11-a408-c875e1f59f14"
+  }
+}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/NPOI.Extensions.Web/DataTableExtension.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2pGVNh3WD7cYZEajFJAEbqkEwA2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="932c858b-9540-46c2-a21b-c83a407088fc" name="Changes" comment="" />
+      <created>1732392362717</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732392362717</updated>
+      <workItem from="1732392363901" duration="689000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
